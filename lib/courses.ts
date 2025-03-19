@@ -1,0 +1,258 @@
+export type Course = {
+  id: number
+  title: string
+  description: string
+  link: string
+  categories: string[]
+  imageUrl?: string
+}
+
+// Array of all unique categories
+export const categories: string[] = [
+  "programación",
+  "diseño-web",
+  "marketing",
+  "idiomas",
+  "negocios",
+  "desarrollo-personal",
+  "ciencia-datos",
+  "inteligencia-artificial",
+  "fotografía",
+  "música",
+  "salud",
+  "finanzas",
+  "educación",
+  "cocina",
+  "arte",
+  "DevOps",
+]
+
+// This file can be expanded to include more courses
+// You can easily add more courses by adding to this array
+export const courses: Course[] = [
+  {
+    id: 1,
+    title: "JavaScript desde Cero",
+    description: "Aprende los fundamentos de JavaScript para desarrollo web",
+    link: "https://example.com/js-course",
+    categories: ["programación", "diseño-web"],
+  },
+  {
+    id: 2,
+    title: "CSS Avanzado",
+    description: "Domina layouts y animaciones modernas con CSS",
+    link: "https://example.com/css-course",
+    categories: ["diseño-web"],
+  },
+  {
+    id: 3,
+    title: "React para Principiantes",
+    description: "Comienza a construir aplicaciones web con React",
+    link: "https://example.com/react-course",
+    categories: ["programación", "diseño-web"],
+  },
+  {
+    id: 4,
+    title: "Marketing Digital Básico",
+    description: "Aprende estrategias fundamentales de marketing digital",
+    link: "https://example.com/marketing-course",
+    categories: ["marketing", "negocios"],
+  },
+  {
+    id: 5,
+    title: "Principios de Diseño UI/UX",
+    description: "Crea mejores experiencias de usuario con design thinking",
+    link: "https://example.com/ux-course",
+    categories: ["diseño-web"],
+  },
+  {
+    id: 6,
+    title: "Python para Ciencia de Datos",
+    description: "Analiza datos y construye modelos con Python",
+    link: "https://example.com/python-course",
+    categories: ["programación", "ciencia-datos"],
+  },
+  {
+    id: 7,
+    title: "Inglés para Principiantes",
+    description: "Curso básico para aprender inglés desde cero",
+    link: "https://example.com/english-course",
+    categories: ["idiomas", "educación"],
+  },
+  {
+    id: 8,
+    title: "Fotografía Digital",
+    description: "Aprende a tomar fotos profesionales con cualquier cámara",
+    link: "https://example.com/photography-course",
+    categories: ["fotografía", "arte"],
+  },
+  {
+    id: 9,
+    title: "Introducción a Machine Learning",
+    description: "Conceptos básicos de aprendizaje automático",
+    link: "https://example.com/ml-course",
+    categories: ["programación", "ciencia-datos", "inteligencia-artificial"],
+  },
+  {
+    id: 10,
+    title: "Guitarra para Principiantes",
+    description: "Aprende a tocar la guitarra desde cero",
+    link: "https://example.com/guitar-course",
+    categories: ["música"],
+  },
+  {
+    id: 11,
+    title: "Finanzas Personales",
+    description: "Maneja tu dinero de forma inteligente",
+    link: "https://example.com/finance-course",
+    categories: ["finanzas", "desarrollo-personal"],
+  },
+  {
+    id: 12,
+    title: "Cocina Básica",
+    description: "Aprende a cocinar platos deliciosos y sencillos",
+    link: "https://example.com/cooking-course",
+    categories: ["cocina"],
+  },
+  {
+    id: 13,
+    title: "Node.js Completo",
+    description: "Desarrollo backend con Node.js y Express",
+    link: "https://example.com/nodejs-course",
+    categories: ["programación"],
+  },
+  {
+    id: 14,
+    title: "Meditación y Mindfulness",
+    description: "Técnicas para reducir el estrés y mejorar la concentración",
+    link: "https://example.com/meditation-course",
+    categories: ["salud", "desarrollo-personal"],
+  },
+  {
+    id: 15,
+    title: "Diseño Gráfico con Figma",
+    description: "Crea diseños profesionales con Figma",
+    link: "https://example.com/figma-course",
+    categories: ["diseño-web", "arte"],
+  },
+  {
+    id: 16,
+    title: "SEO para Principiantes",
+    description: "Optimiza tu sitio web para los motores de búsqueda",
+    link: "https://example.com/seo-course",
+    categories: ["marketing", "diseño-web"],
+  },
+  {
+    id: 17,
+    title: "Introducción a Docker",
+    description: "Aprende a usar contenedores para tus aplicaciones",
+    link: "https://example.com/docker-course",
+    categories: ["programación"],
+  },
+  {
+    id: 18,
+    title: "Yoga para Principiantes",
+    description: "Rutinas de yoga para mejorar tu flexibilidad y bienestar",
+    link: "https://example.com/yoga-course",
+    categories: ["salud"],
+  },
+  {
+    id: 19,
+    title: "Excel Avanzado",
+    description: "Domina fórmulas y análisis de datos en Excel",
+    link: "https://example.com/excel-course",
+    categories: ["negocios", "ciencia-datos"],
+  },
+  {
+    id: 20,
+    title: "Francés Básico",
+    description: "Aprende las bases del idioma francés",
+    link: "https://example.com/french-course",
+    categories: ["idiomas", "educación"],
+  },
+  {
+    id: 21,
+    title: "Introducción a SQL",
+    description: "Aprende a gestionar bases de datos con SQL",
+    link: "https://example.com/sql-course",
+    categories: ["programación", "ciencia-datos"],
+  },
+  {
+    id: 22,
+    title: "Dibujo Digital",
+    description: "Técnicas de ilustración digital para principiantes",
+    link: "https://example.com/digital-drawing-course",
+    categories: ["arte"],
+  },
+  {
+    id: 23,
+    title: "Copywriting",
+    description: "Aprende a escribir textos persuasivos para marketing",
+    link: "https://example.com/copywriting-course",
+    categories: ["marketing", "negocios"],
+  },
+  {
+    id: 24,
+    title: "Flutter para Principiantes",
+    description: "Desarrollo de apps móviles multiplataforma",
+    link: "https://example.com/flutter-course",
+    categories: ["programación"],
+  },
+  {
+    id: 25,
+    title: "Nutrición Básica",
+    description: "Fundamentos de alimentación saludable",
+    link: "https://example.com/nutrition-course",
+    categories: ["salud", "cocina"],
+  },
+  {
+    id: 26,
+    title: "Introducción a AWS",
+    description: "Conceptos básicos de Amazon Web Services",
+    link: "https://example.com/aws-course",
+    categories: ["programación", "negocios"],
+  },
+  {
+    id: 27,
+    title: "Producción Musical",
+    description: "Aprende a producir música desde casa",
+    link: "https://example.com/music-production-course",
+    categories: ["música"],
+  },
+  {
+    id: 28,
+    title: "Inversiones para Principiantes",
+    description: "Aprende a invertir en bolsa y otros activos",
+    link: "https://example.com/investing-course",
+    categories: ["finanzas"],
+  },
+  {
+    id: 29,
+    title: "Edición de Video",
+    description: "Técnicas básicas de edición de video",
+    link: "https://example.com/video-editing-course",
+    categories: ["arte", "fotografía"],
+  },
+  {
+    id: 30,
+    title: "Introducción a ChatGPT",
+    description: "Aprende a utilizar ChatGPT de manera efectiva",
+    link: "https://example.com/chatgpt-course",
+    categories: ["inteligencia-artificial", "desarrollo-personal"],
+  },
+  {
+    id: 31,
+    title: "Fotografía Digital Avanzada",
+    description: "Fundamentos y técnicas para la fotografía digital profesional",
+    link: "https://example.com/digital-photography-course",
+    categories: ["arte", "fotografía", "DevOps"],
+  },
+  {
+    id: 32,
+    title: "Fotografía",
+    description: "Fundamentos y técnicas para la fotografía digital profesional",
+    link: "https://example.com/digital-photography-course",
+    categories: ["arte"],
+  },
+]
+
